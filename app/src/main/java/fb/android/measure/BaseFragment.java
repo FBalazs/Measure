@@ -1,4 +1,4 @@
-package fb.android.measure.ui;
+package fb.android.measure;
 
 import android.app.Activity;
 import android.os.Bundle;

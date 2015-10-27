@@ -1,6 +1,4 @@
-package fb.android.measure.ui;
-
-import fb.android.measure.R;
+package fb.android.measure;
 
 public class MainActivity extends BaseActivity {
     @Override

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/pref_calibration_title">
+
+        <Preference
+            android:title="@string/pref_calibration_gravity_title"
+            android:summary="@string/pref_calibration_gravity_summary">
+            <intent
+                android:targetPackage="fb.android.measure"
+                android:targetClass="fb.android.measure.calib.CalibrateGravityActivity"/>
+        </Preference>
+    </PreferenceCategory>
+</PreferenceScreen>

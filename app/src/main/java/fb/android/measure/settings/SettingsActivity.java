@@ -1,7 +1,7 @@
-package fb.android.measure.ui.settings;
+package fb.android.measure.settings;
 
+import fb.android.measure.BaseActivity;
 import fb.android.measure.R;
-import fb.android.measure.ui.BaseActivity;
 
 public class SettingsActivity extends BaseActivity {
     @Override

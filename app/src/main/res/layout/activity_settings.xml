@@ -10,7 +10,7 @@
 
     <fragment
         android:id="@+id/activity_settings_fragment"
-        android:name="fb.android.measure.ui.settings.SettingsMainFragment"
+        android:name="fb.android.measure.settings.SettingsMainFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/toolbar"/>

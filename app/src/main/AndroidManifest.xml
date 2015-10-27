@@ -11,8 +11,9 @@
         android:theme="@style/Measure" >
 
         <activity
-            android:name=".ui.MainActivity"
-            android:label="@string/activity_main_title" >
+            android:name=".MainActivity"
+            android:label="@string/activity_main_title"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,12 +22,33 @@
         </activity>
 
         <activity
-            android:name=".ui.settings.SettingsActivity"
-            android:label="@string/activity_settings_title"
-            android:parentActivityName=".ui.MainActivity">
+            android:name=".traction.MeasureTractionActivity"
+            android:label="@string/activity_measure_traction_title"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ui.MainActivity" />
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".calib.CalibrateGravityActivity"
+            android:label="@string/activity_measure_traction_title"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".settings.SettingsActivity"
+            android:label="@string/activity_settings_title"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
         </activity>
     </application>
 

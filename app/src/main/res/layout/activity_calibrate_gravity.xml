@@ -3,15 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="fb.android.measure.MainActivity">
+    tools:context="fb.android.measure.calib.CalibrateGravityActivity">
 
     <include
         android:id="@+id/toolbar"
         layout="@layout/toolbar" />
 
     <fragment
-        android:id="@+id/activity_main_fragment"
-        android:name="fb.android.measure.MainFragment"
+        android:id="@+id/activity_calib_gravity_fragment"
+        android:name="fb.android.measure.calib.CalibrateGravityFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/toolbar"/>
