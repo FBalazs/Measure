@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Measure</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="activity_settings_title">Settings</string>
+    <string name="activity_main_title">Measure</string>
+    <string name="pref_measurement_title">Measurement settings</string>
+    <string name="pref_measurement_samplingus_title">Sampling micro seconds</string>
+    <string name="pref_measurement_samplingus_summary">The time to wait between two sampling</string>
+    <string name="pref_measurement_samplingus_key">pref_measurement_samplingus_key</string>
+</resources>
