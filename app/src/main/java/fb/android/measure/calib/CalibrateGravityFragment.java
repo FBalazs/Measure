@@ -27,7 +27,7 @@ public class CalibrateGravityFragment extends SensorFragment {
         if(checked) {
             samples = 0;
             sum = 0;
-            startListen(Sensor.TYPE_ACCELEROMETER, Settings.getSamplingPeriodUs(getContext()));
+            startListen(Sensor.TYPE_ACCELEROMETER, Settings.getAccelSamplingPeriodUs(getContext()));
             tv.setText(getString(R.string.calibrating));
         } else {
             if(samples != -1)

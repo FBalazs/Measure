@@ -3,15 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="fb.android.measure.measure.MeasureTractionActivity">
+    tools:context="fb.android.measure.measure.MeasureFrictionFragment">
 
     <include
         android:id="@+id/toolbar"
         layout="@layout/toolbar" />
 
     <fragment
-        android:id="@+id/activity_measure_traction_fragment"
-        android:name="fb.android.measure.measure.MeasureTractionFragment"
+        android:id="@+id/activity_measure_friction_fragment"
+        android:name="fb.android.measure.measure.MeasureFrictionFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/toolbar"/>

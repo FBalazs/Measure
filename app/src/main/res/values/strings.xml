@@ -3,16 +3,31 @@
 
     <string name="activity_main_title">Measure</string>
     <string name="activity_measure_traction_title">Traction measurement</string>
+    <string name="activity_measure_friction_title">Friction measurement</string>
     <string name="activity_calibrate_gravity_title">Calibrate gravity</string>
     <string name="activity_settings_title">Settings</string>
 
     <string name="action_settings">Settings</string>
 
+    <string name="pref_measurement_title">Measurement</string>
+    <string name="pref_measurement_accel_samplingus_title">Accelerometer sampling period</string>
+    <string name="pref_measurement_accel_samplingus_summary">Accelerometer\'s sampling periods\' length in us</string>
+    <string name="pref_measurement_accel_samplingus_key">pref_measurement_traction_accel_samplingus_key</string>
+    <string name="pref_measurement_accel_samplingus_defvalue">5</string>
+
     <string name="pref_measurement_traction_title">Traction measurement</string>
-    <string name="pref_measurement_traction_accel_samplingus_title">Accelerometer sampling period</string>
-    <string name="pref_measurement_traction_accel_samplingus_summary">Accelerometer\'s sampling periods\' length in us</string>
-    <string name="pref_measurement_traction_accel_samplingus_key">pref_measurement_traction_accel_samplingus_key</string>
-    <string name="pref_measurement_traction_accel_samplingus_defvalue">5</string>
+    <string name="pref_measurement_traction_bufflength_title">Buffer length</string>
+    <string name="pref_measurement_traction_bufflength_summary">The length of the buffer used to smooth out the oscillation of samples</string>
+    <string name="pref_measurement_traction_bufflength_key">pref_measurement_traction_bufflength_key</string>
+    <string name="pref_measurement_traction_bufflength_defvalue">5</string>
+    <string name="pref_measurement_traction_slide_accel_title">Slide acceleration</string>
+    <string name="pref_measurement_traction_slide_accel_summary">The minimum acceleration that should be detected as sliding</string>
+    <string name="pref_measurement_traction_slide_accel_key">pref_measurement_traction_slide_accel_key</string>
+    <string name="pref_measurement_traction_slide_accel_defvalue">5</string>
+    <string name="pref_measurement_traction_threshold_accel_title">Acceleration threshold</string>
+    <string name="pref_measurement_traction_threshold_accel_summary">The maximum value to ignore</string>
+    <string name="pref_measurement_traction_threshold_accel_key">pref_measurement_traction_threshold_accel_key</string>
+    <string name="pref_measurement_traction_threshold_accel_defvalue">1.25</string>
 
     <string name="pref_calibration_gravity_key">pref_calibration_gravity_key</string>
     <string name="pref_calibration_title">Calibration</string>
@@ -27,7 +42,10 @@
 
     <string name="accel_equal">a = %.2f m/s^2</string>
     <string name="angle_equal">α = %.2f°</string>
-    <string name="traction_equal">μ = %.2f</string>
+    <string name="traction_equal">μ_0 = %.3f</string>
+    <string name="friction_equal">μ = %.3f</string>
+    <string name="samplespersec_equal">samples/sec = %.2f</string>
+    <string name="state_equal">state = %s</string>
 
     <string name="measure_start">Start measurement</string>
     <string name="measure_stop">Stop measurement</string>

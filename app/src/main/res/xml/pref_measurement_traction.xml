@@ -5,10 +5,24 @@
         android:title="@string/pref_measurement_traction_title">
 
         <EditTextPreference
-            android:title="@string/pref_measurement_traction_accel_samplingus_title"
-            android:summary="@string/pref_measurement_traction_accel_samplingus_summary"
-            android:key="@string/pref_measurement_traction_accel_samplingus_key"
-            android:defaultValue="@string/pref_measurement_traction_accel_samplingus_defvalue"
+            android:title="@string/pref_measurement_traction_bufflength_title"
+            android:summary="@string/pref_measurement_traction_bufflength_summary"
+            android:key="@string/pref_measurement_traction_bufflength_key"
+            android:defaultValue="@string/pref_measurement_traction_bufflength_defvalue"
+            android:inputType="number"/>
+
+        <EditTextPreference
+            android:title="@string/pref_measurement_traction_slide_accel_title"
+            android:summary="@string/pref_measurement_traction_slide_accel_summary"
+            android:key="@string/pref_measurement_traction_slide_accel_key"
+            android:defaultValue="@string/pref_measurement_traction_slide_accel_defvalue"
+            android:inputType="number"/>
+
+        <EditTextPreference
+            android:title="@string/pref_measurement_traction_threshold_accel_title"
+            android:summary="@string/pref_measurement_traction_threshold_accel_summary"
+            android:key="@string/pref_measurement_traction_threshold_accel_key"
+            android:defaultValue="@string/pref_measurement_traction_threshold_accel_defvalue"
             android:inputType="number"/>
     </PreferenceCategory>
 </PreferenceScreen>

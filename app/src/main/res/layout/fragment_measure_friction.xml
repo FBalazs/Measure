@@ -16,7 +16,7 @@
         android:orientation="vertical">
 
         <com.github.mikephil.charting.charts.LineChart
-            android:id="@+id/fragment_measure_traction_chart"
+            android:id="@+id/fragment_measure_friction_chart"
             android:layout_width="match_parent"
             android:layout_height="250dp"/>
 
@@ -26,58 +26,52 @@
             android:orientation="horizontal">
 
             <CheckBox
-                android:id="@+id/fragment_measure_traction_cb_chart_a_enable"
+                android:id="@+id/fragment_measure_friction_cb_chart_a_enable"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="true"
                 android:text="a*"/>
 
             <CheckBox
-                android:id="@+id/fragment_measure_traction_cb_chart_avga_enable"
+                android:id="@+id/fragment_measure_friction_cb_chart_avga_enable"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="true"
                 android:text="avgA*"/>
 
-            <CheckBox
-                android:id="@+id/fragment_measure_traction_cb_chart_angle_enable"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:checked="true"
-                android:text="angle*"/>
-
-            <CheckBox
-                android:id="@+id/fragment_measure_traction_cb_chart_avgangle_enable"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:checked="true"
-                android:text="avgAngle*"/>
         </LinearLayout>
 
         <TextView
-            android:id="@+id/fragment_measure_traction_tv_accel"
+            android:id="@+id/fragment_measure_friction_tv_accel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
             android:text="@string/accel_equal"/>
 
         <TextView
-            android:id="@+id/fragment_measure_traction_tv_angle"
+            android:id="@+id/fragment_measure_friction_tv_friction"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
-            android:text="@string/angle_equal"/>
+            android:text="@string/friction_equal"/>
 
         <TextView
-            android:id="@+id/fragment_measure_traction_tv_traction"
+            android:id="@+id/fragment_measure_friction_tv_samplespersec"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
-            android:text="@string/traction_equal"/>
+            android:text="@string/samplespersec_equal"/>
+
+        <TextView
+            android:id="@+id/fragment_measure_friction_tv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/state_equal"/>
     </LinearLayout>
 
     <ToggleButton
-        android:id="@+id/fragment_measure_traction_btn_start_stop"
+        android:id="@+id/fragment_measure_friction_btn_start_stop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"

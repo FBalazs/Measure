@@ -1,4 +1,4 @@
-package fb.android.measure.traction;
+package fb.android.measure.measure;
 
 import android.os.Bundle;
 import android.view.WindowManager;

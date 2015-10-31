@@ -16,6 +16,13 @@
         android:text="@string/activity_measure_traction_title"/>
 
     <Button
+        android:id="@+id/fragment_main_btn_measure_friction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/activity_measure_friction_title"/>
+
+    <Button
         android:id="@+id/fragment_main_btn_calibrate_gravity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

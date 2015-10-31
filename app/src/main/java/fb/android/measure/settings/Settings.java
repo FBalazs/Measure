@@ -12,9 +12,16 @@ public class Settings {
         return PreferenceManager.getDefaultSharedPreferences(context.getApplicationContext());
     }
 
-    public static int getSamplingPeriodUs(Context context) {
-        return Integer.parseInt(getPreferences(context).getString(context.getString(R.string.pref_measurement_traction_accel_samplingus_key),
-                context.getString(R.string.pref_measurement_traction_accel_samplingus_defvalue)));
+    public static String getStringPreference(Context context, int key, int defvalue) {
+        return getPreferences(context).getString(context.getString(key), context.getString(defvalue));
+    }
+
+    public static int getStringIntPreference(Context context, int key, int defvalue) {
+        return Integer.parseInt(getStringPreference(context, key, defvalue));
+    }
+
+    public static float getStringFloatPreference(Context context, int key, int defvalue) {
+        return Float.parseFloat(getStringPreference(context, key, defvalue));
     }
 
     public static float getCalibratedGravity(Context context) {
@@ -23,5 +30,29 @@ public class Settings {
 
     public static void setCalibratedGravity(Context context, float value) {
         getPreferences(context).edit().putFloat(context.getString(R.string.pref_calibration_gravity_key), value).commit();
+    }
+
+    public static int getAccelSamplingPeriodUs(Context context) {
+        return getStringIntPreference(context,
+                R.string.pref_measurement_accel_samplingus_key,
+                R.string.pref_measurement_accel_samplingus_defvalue);
+    }
+
+    public static int getTractionBuffLength(Context context) {
+        return getStringIntPreference(context,
+                R.string.pref_measurement_traction_bufflength_key,
+                R.string.pref_measurement_traction_bufflength_defvalue);
+    }
+
+    public static float getTractionSlideAccel(Context context) {
+        return getStringFloatPreference(context,
+                R.string.pref_measurement_traction_slide_accel_key,
+                R.string.pref_measurement_traction_slide_accel_defvalue);
+    }
+
+    public static float getTractionThresholdAccel(Context context) {
+        return getStringFloatPreference(context,
+                R.string.pref_measurement_traction_threshold_accel_key,
+                R.string.pref_measurement_traction_threshold_accel_defvalue);
     }
 }

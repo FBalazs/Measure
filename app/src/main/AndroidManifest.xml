@@ -22,7 +22,7 @@
         </activity>
 
         <activity
-            android:name=".traction.MeasureTractionActivity"
+            android:name=".measure.MeasureTractionActivity"
             android:label="@string/activity_measure_traction_title"
             android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait">
@@ -32,8 +32,18 @@
         </activity>
 
         <activity
+            android:name=".measure.MeasureFrictionActivity"
+            android:label="@string/activity_measure_friction_title"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
             android:name=".calib.CalibrateGravityActivity"
-            android:label="@string/activity_measure_traction_title"
+            android:label="@string/activity_calibrate_gravity_title"
             android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait">
             <meta-data
