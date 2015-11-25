@@ -16,6 +16,7 @@ Az alkalmazás használata:
 		telefon között.
 
 Az alkalmazás fizikai háttere:
+
 	Mintavételezés:
 		A program a telefon gyorsulás szenzorának maximális mintavételezési
 		sebességét használja, ez telefononként változhaz, Samsung Galaxy Core Prime
